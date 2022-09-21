@@ -3,7 +3,7 @@ body{
 }
 
 Header{
-    background-color: white;
+    background-color: Black;
     display:flex;
     align-items: flex-end;
     height:75px;
@@ -21,30 +21,35 @@ Header{
 
 .list{
     padding: 10px 15px 0px 15px;
-    background-color: rgb(48, 47, 47);
-    color: white;
     font-weight: 800;
     width:120px;
     text-align: center;
 }
-
+.listClicked{
+    background-color: white;
+    color: Black;
+}
+.listUnClicked{
+    background-color: black;
+    color: wHITE;
+}
 .content{
     display:grid;
-    grid-template-columns: repeat(2,calc(16*25px));
-    grid-template-rows: repeat(10,calc(9*25px));
+    grid-template-columns: repeat(2,calc(16*35px));
+    grid-template-rows: repeat(10,calc(9*35px));
     gap:15px;
 }
 
 .item{
     border-radius: 15px;
     display:grid;
-    border: 10px double black;
+    border: 10px double white;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     grid-template-columns:1fr;
     grid-template-rows: 1fr 4fr;
-    background-color: white;
+    background-color: black;
 }
 
 .center{
@@ -52,7 +57,7 @@ Header{
     padding-top: 20px;
     justify-content: center;
     align-items: center;
-    background-color: rgb(48, 47, 47);
+    background-color: white;
 }
 
 .item img{
@@ -64,5 +69,11 @@ Header{
 
 .item p{
     margin:0;
+    padding: 5px;
+    color:white;
     justify-self: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    font-size:1.1rem
 }
