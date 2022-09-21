@@ -5,10 +5,18 @@ body{
 Header{
     background-color: Black;
     display:flex;
-    align-items: flex-end;
-    height:75px;
+    flex-direction: column;
+    height:140px;
 }
-
+.webTitle{
+    color:white;
+    display:flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px;
+    height: 60px;
+}
 .menu-list{
     list-style: none;
     display:flex;
